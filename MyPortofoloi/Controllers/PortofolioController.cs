@@ -6,6 +6,7 @@ namespace MyPortofoloi.Controllers
     public class PortofolioController : Controller
     {
         private UserDetails _userDetails;
+        public List<Email> emails = new List<Email>();
         public PortofolioController()
         {
             _userDetails = new UserDetails()
@@ -29,5 +30,24 @@ namespace MyPortofoloi.Controllers
 
             return View(_userDetails);
         }
+
+        [HttpGet]
+        public IActionResult AboutMe ()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AboutMe(Email email)
+        {
+            emails.Add(email);
+            return RedirectToAction("EmailIsSent", "Portofolio",email);
+        }
+
+        public IActionResult EmailIsSent(Email email)
+        {
+            return View(email);
+        }
+
     }
 }

@@ -8625,19 +8625,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Labinoti\\.nuget\\packages\\": {}
+    "C:\\Users\\darda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Labinoti\\source\\repos\\MyPortofoloi\\MyPortofoloi\\MyPortofoloi.csproj",
+      "projectUniqueName": "C:\\Users\\darda\\Source\\Repos\\MyPortofolio\\MyPortofoloi\\MyPortofoloi.csproj",
       "projectName": "MyPortofoloi",
-      "projectPath": "C:\\Users\\Labinoti\\source\\repos\\MyPortofoloi\\MyPortofoloi\\MyPortofoloi.csproj",
-      "packagesPath": "C:\\Users\\Labinoti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Labinoti\\source\\repos\\MyPortofoloi\\MyPortofoloi\\obj\\",
+      "projectPath": "C:\\Users\\darda\\Source\\Repos\\MyPortofolio\\MyPortofoloi\\MyPortofoloi.csproj",
+      "packagesPath": "C:\\Users\\darda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\darda\\Source\\Repos\\MyPortofolio\\MyPortofoloi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Labinoti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\darda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
