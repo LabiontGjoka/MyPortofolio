@@ -1,0 +1,105 @@
+﻿@model Email
+@{
+    ViewData["Title"] = "AboutMe";
+}
+<head>
+    <style>
+        .inputs{
+            display: block;
+            width: 100%;
+            background: #e6e6e6;
+            font-family: Montserrat-Bold;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #666666;
+            margin-top:20px;
+        }
+        input.inputs {
+         height: 40px;
+         border-radius: 25px;
+         padding: 0 15px;
+        }
+
+        .contact1-form-btn {
+          float:right;
+          margin-top:15px;
+          height: 40px;
+          border-radius: 25px;
+          background: #57b846;
+          font-family: Montserrat-Bold;
+          font-size: 15px;
+          line-height: 1.5;
+          color: #fff;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 25px;
+          -webkit-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          transition: all 0.4s;
+        }
+        /*body{
+             background-image: linear-gradient(red, yellow);
+        }*/
+        .emailsender{
+            margin-top:150px;
+            background-color:white;
+        }
+        .messagetxt{
+            height:200px !important;
+        }
+        .pic:hover
+        {
+         opacity: 0.3;
+         filter: alpha(opacity=30);
+        }
+    </style>
+</head>
+<body>
+    <div class= "row">
+        <div class="col-md-12 emailsender" >
+            <div class="row">
+            <div class="col-md-6">
+                <div class="contact1-pic js-tilt" data-tilt="" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
+                    <img class="pic" src="~/images/email.png" alt="IMG">
+                </div>
+            </div>
+            <div class="col-md-6">
+            <form method="post" id="forma" asp-controller="Portofolio" asp-action="AboutMe">
+                <div>
+                    <h3>Contact me</h3>
+                </div>
+                <div>
+                 <input class="inputs" type="text" required id="FirstName" asp-for="@Model.FirstName" placeholder="First name" name="FirstName"/>
+                </div>
+                <div>
+                 <input class="inputs" type="text" required id="LastName" asp-for="@Model.LastName" placeholder="Last name" name="LastName"/>
+                </div>
+                <div>
+                 <input class="inputs" type="email" required id="EmailAddress" asp-for="@Model.EmailAddress" placeholder="Email address" name="EmailAddress"/>
+                </div>
+                <div>
+                 <input class="inputs" type="text" required id="Subject" asp-for="@Model.Subject" placeholder="Subject" name="Subject"/>
+                </div>
+                <div>
+                 <input class="inputs messagetxt" required type="text" id="Message" asp-for="@Model.Message" placeholder="Message" name="Message"/>
+                </div>
+                <div>
+                    <input class="contact1-form-btn" type="submit" value="Submit"/>
+                </div>
+            </form>
+            </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+
+        </div>
+    </div>
+</body>
+
